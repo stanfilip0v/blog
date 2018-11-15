@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,G,CACI,S,CACA,W,CAGJ,a,CACI,iB","file":"../main.css","sourcesContent":["img {\n    width: 30%;\n    height: auto;\n}\n\n.site-content {\n    padding: 1rem 4rem;\n}"]}

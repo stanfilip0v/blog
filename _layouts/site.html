@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+</head>
+<body>
+    <div class="site">
+        
+        {% include header.html %}
+
+        <main class="site-content">
+            {% for post in site.posts %}
+                <a href="{{ post.url }}">
+                    <div class="post">
+                        <img src="/images/{{ post.title }}.jpg">
+                        <div class="preview">
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.excerpt }}</p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </main>
+
+        <footer class="site-footer">
+
+        </footer>
+    </div>
+</body>
+</html>
