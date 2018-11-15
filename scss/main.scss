@@ -6,7 +6,7 @@
     
     .post {
         position: relative;
-        flex: 0 0 30%;
+        flex: 0 0 25%;
         height: auto;
         text-align: center;
         padding: 1rem;
@@ -23,7 +23,8 @@
                 padding: 0.5rem 1rem;
                 font-weight: bold;
                 &:hover {
-                    text-shadow: 0 0 1rem #17355B;
+                    border-top: 1px solid #17355B;
+                    border-left: 1px solid #17355B;
                 }
             }
         }
@@ -34,13 +35,13 @@
     }
     
     img {
-        width: 15em;
-        height: 15em;
+        width: 13em;
+        height: 13em;
         object-fit: cover;
         border-radius: 50%;
-        box-shadow: 0 0 1rem #17355B;
+        box-shadow: 0 0 3rem #17355B;
         &:hover {
-            box-shadow: 0 0 3rem #17355B;
+            box-shadow: 0 0 5rem #17355B;
         }
     }
 }
