@@ -114,6 +114,7 @@
         padding: 5em 5em 0 5em;
 
         nav {
+            margin-top: 2rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -135,5 +136,11 @@
         h4 {
             width: 70%;
         }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .title {
+        margin-top: 4rem;
     }
 }
