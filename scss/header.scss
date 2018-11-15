@@ -3,8 +3,10 @@
     background: url(/images/milky-way.jpg) no-repeat fixed center;
     background-size: cover;
     color: var(--header-font-color, white);
-    text-align: center;
     padding: 3em 0 0 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
     text-shadow: 0 0 8px #eee;
     margin-bottom: 2rem;
     box-shadow: 0rem 0.6rem 1rem #333;
@@ -13,23 +15,45 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: var(--header-font-color, white);
+            padding: 1rem 0 0.2rem 0;
+            margin: 0 1rem;
+        }
+    }
+
+    ul:first-child a:hover {
+        text-shadow: 0 0 1.5rem lightskyblue;
+    }
+
+    ul:nth-child(2) li {
+
+        font-size: 1.4em;
+
+        &:nth-child(1) a:hover {
+            color: rgb(70, 70, 247); 
+        }
+        &:nth-child(2) a:hover {
+            color: #1DA1F2;
+        }
+        &:nth-child(3) a:hover {
+            color: rgb(255, 47, 47);
+        }
+        &:nth-child(4) a:hover {
+            color: #FE4600;
+        }
     }
 
     li {
         display: block;
     }
 
-    a {
-        text-decoration: none;
-        color: var(--header-font-color, white);
-        padding: 1rem 0 0.2rem 0;
-        &:hover {
-            border-bottom: 2px solid var(--header-font-color, white);
-        }
-    }
 
     nav {
         padding: 1rem 1rem;
+        width: 100%;
     }
 }
 
@@ -46,8 +70,9 @@
 
     h4 {
         padding-top: 0.5rem;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-style: italic;
+        width: 70%;
     }
 
     hr {
@@ -60,22 +85,53 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 320px) {
 
     .site-header {
-        flex-direction: column;
-        align-items: center;
 
-        .title {
-            order: 1;
+        padding: 3em 0 0 0;
+
+        ul {
+            padding-bottom: 0;
         }
 
+        ul:nth-child(2) {
+            opacity: 0;
+        }
+
+        h4 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    
+    .site-header {
+
+        padding: 5em 5em 0 5em;
+
         nav {
-            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        ul:nth-child(2) {
+            opacity: 1;
         }
 
         ul {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .title {
+        padding-bottom: 4em;
+
+        h4 {
+            width: 70%;
         }
     }
 }
