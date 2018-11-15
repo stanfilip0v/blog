@@ -1,8 +1,47 @@
-img {
-    width: 30%;
-    height: auto;
+.site-content {
+    padding: 1rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .post {
+        position: relative;
+        flex: 0 0 30%;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #17355B;
+        border-bottom: 1px solid #17355B;
+        
+        a {
+            text-decoration: none;
+            color: #17355B;
+
+            &:nth-child(2) {
+                position: absolute;
+                bottom: 0; right: 0;
+                padding: 0.5rem 1rem;
+                font-weight: bold;
+                &:hover {
+                    text-shadow: 0 0 1rem #17355B;
+                }
+            }
+        }
+
+        h3 {
+            padding: 0.5rem 0 0 0;
+        }
+    }
+    
+    img {
+        width: 15em;
+        height: 15em;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 1rem #17355B;
+        &:hover {
+            box-shadow: 0 0 3rem #17355B;
+        }
+    }
 }
 
-.site-content {
-    padding: 1rem 4rem;
-}

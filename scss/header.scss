@@ -1,6 +1,6 @@
 .site-header {
     display: flex;
-    background: url(/images/milky-way.jpg) no-repeat fixed center;
+    background: url(/images/milky-way3.jpg) no-repeat fixed center;
     background-size: cover;
     color: var(--header-font-color, white);
     padding: 3em 0 0 0;
@@ -21,11 +21,13 @@
             color: var(--header-font-color, white);
             padding: 1rem 0 0.2rem 0;
             margin: 0 1rem;
+            text-transform: uppercase;
         }
     }
 
     ul:first-child a:hover {
-        text-shadow: 0 0 1.5rem lightskyblue;
+        text-shadow: 0 0 1.5rem whitesmoke;
+        color: lightskyblue;
     }
 
     ul:nth-child(2) li {
