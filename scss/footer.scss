@@ -1,0 +1,67 @@
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url(/images/milky-way3.jpg) no-repeat fixed center;
+    background-size: cover;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    color: white;
+    text-shadow: 0 0 8px #eee;
+    box-shadow: 0 -0.6rem 1rem #333;
+
+    div {
+        flex: 0 0 30%;
+    }
+
+    .logo {
+        text-align: center;
+        
+        i {
+            font-size: 4rem;
+        }
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    li {
+        display: block;
+
+        &:nth-child(1) a:hover {
+            i {
+                color: rgb(70, 70, 247); 
+            }
+        }
+        &:nth-child(2) a:hover {
+            i {
+                color: #1DA1F2;
+            }
+        }
+        &:nth-child(3) a:hover {
+            i {
+                color: rgb(255, 107, 107);
+            }
+        }
+        &:nth-child(4) a:hover {
+            i {
+                color: #FE4600;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    i {
+        padding-right: 0.5rem;
+    }
+
+    p, ul {
+        padding-bottom: 0;
+    }
+    
+}
