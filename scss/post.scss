@@ -1,0 +1,38 @@
+.post-header {
+    padding: 2rem;
+    background: #17355B;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.6rem 1rem #333;
+    text-shadow: var(--text-shadow);
+
+    h1 {
+        padding: 0;
+    }
+}
+
+.post-main {
+    position: relative;
+    margin: 4rem 8rem;
+    padding: 2rem 5rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #17355B;
+    border-bottom: 1px solid #17355B;
+
+    a {
+        position: absolute;
+        bottom: 0; right: 0;
+        text-decoration: none;
+        color: #17355B;
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding: 0.5rem 2rem;
+        border-top: 1px solid #17355B;
+        border-left: 1px solid #17355B;
+
+        &:hover {
+            background: #17355B;
+            color: white;
+        }
+    }
+}
