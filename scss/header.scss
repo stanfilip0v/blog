@@ -103,7 +103,7 @@
         }
 
         ul:nth-child(2) {
-            opacity: 0;
+            display: none;
         }
 
         h4 {
@@ -126,7 +126,7 @@
         }
 
         ul:nth-child(2) {
-            opacity: 1;
+            display: flex;
         }
 
         ul {

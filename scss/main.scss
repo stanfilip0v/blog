@@ -10,6 +10,7 @@
         height: auto;
         text-align: center;
         padding: 1rem;
+        margin-bottom: 2rem;
         border-top: 1px solid #17355B;
         border-bottom: 1px solid #17355B;
         
@@ -42,6 +43,17 @@
         box-shadow: 0 0 3rem #17355B;
         &:hover {
             box-shadow: 0 0 5rem #17355B;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .site-content {
+        flex-direction: column;
+        justify-content: center;
+
+        .post {
+            flex: 0 0 50%;
         }
     }
 }
