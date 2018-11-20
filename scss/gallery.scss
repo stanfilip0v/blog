@@ -1,12 +1,45 @@
 .gallery {
     position: relative;
-    background: url(/images/sun.jpg) no-repeat fixed center;
+    background: url(/images/sun2.jpg) no-repeat fixed center;
     background-size: cover;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+        position: absolute;
+        bottom: 4%; right: 2%;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        border-bottom: 1px solid white;
+        padding: 0.5rem 1rem;
+        transition: background 0.1s ease-in, color 0.1s ease-in;
+
+        &:hover {
+            color: #333;
+            background: white;
+        }
+    }
+
+    h1 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 0 0 2rem white;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid white;
+    }
 
     .pic {
         position: absolute;
+        i {
+            font-size: 2rem;
+            display: none;
+        }
     }
 
     .astronaut {
@@ -21,19 +54,19 @@
             width: 8rem;
             height: 8rem;
         }
-        top: 10%; right: 23%;
+        top: 13%; right: 28%;
     }
     .earth {
         img {
             width: 15rem;
             height: 15rem;
         }
-        bottom: 3%; right: 28%;
+        bottom: 7%; right: 28%;
     }
     .satelite {
         img {
-            width: 7rem;
-            height: 7rem;
+            width: 9rem;
+            height: 9rem;
         }
         bottom: 15%; left: 14%;
     }
@@ -55,16 +88,52 @@
         object-fit: cover;
         border-radius: 50%;
         box-shadow: 0 0 3rem white;
+        
+        &:hover {
+            animation: glow 3s ease-in-out;
+            animation-iteration-count: infinite;
+            cursor: pointer;
+        }
     }
 
     input:checked + label div {
         top: 0; bottom: 0; left: 0; right: 0;
         z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9);
+
         img {
-            width: 100%;
-            height: auto;
-            z-index: 1000;
+            border-radius: 0.3rem;
+            box-shadow: 0 0 4rem #333;
+            transform: scale(2.5);
+            transition: all 0.3s ease-in;
         }
+
+        i {
+            position: absolute;
+            top: 1%; right: 1%;
+            display: block;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 3rem white;
+    }
+
+    50% {
+        box-shadow: 0 0 6rem white;
+    }
+
+    100% {
+        box-shadow: 0 0 3rem white;
     }
 }
 
