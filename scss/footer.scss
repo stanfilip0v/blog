@@ -19,6 +19,7 @@
         
         i {
             font-size: 4rem;
+            margin: 0.5rem 0;
         }
     }
 
@@ -28,6 +29,11 @@
 
     li {
         display: block;
+
+        i {
+            padding-right: 0.5rem;
+            transition: color 0.1s ease-in;
+        }
 
         &:nth-child(1) a:hover {
             i {
@@ -54,11 +60,6 @@
     a {
         text-decoration: none;
         color: white;
-    }
-    
-    i {
-        padding-right: 0.5rem;
-        transition: color 0.1s ease-in;
     }
 
     p, ul {
