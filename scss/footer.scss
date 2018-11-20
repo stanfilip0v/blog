@@ -19,8 +19,6 @@
         
         i {
             font-size: 4rem;
-            animation: levitate 2.5s;
-            animation-iteration-count: infinite;
         }
     }
 
@@ -57,9 +55,10 @@
         text-decoration: none;
         color: white;
     }
-
+    
     i {
         padding-right: 0.5rem;
+        transition: color 0.1s ease-in;
     }
 
     p, ul {
@@ -103,15 +102,5 @@
         div:nth-child(2) {
             order: 3;
         }
-    }
-}
-
-@keyframes levitate {
-    50% {
-        margin-top: 0.5rem;
-    }
-
-    100% {
-        margin-top: 0;
     }
 }

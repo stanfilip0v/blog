@@ -1,2 +1,2 @@
-@import url(variables.css);@import url(reset.css);@import url(typography.css);@import url(header.css);@import url(main.css);@import url(footer.css);@import url(post.css);body{background:#dee7fa}
+@import url(variables.css);@import url(reset.css);@import url(typography.css);@import url(header.css);@import url(main.css);@import url(footer.css);@import url(post.css);.site,body{position:relative}body{background:#dee7fa}.site{min-height:100%;overflow:hidden;display:block}
 /*# sourceMappingURL=map/styles.css.map */

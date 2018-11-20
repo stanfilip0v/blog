@@ -8,4 +8,12 @@
 
 body {
     background: rgb(222, 231, 250);
+    position: relative;
+}
+
+.site {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    display: block;
 }
