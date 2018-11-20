@@ -106,9 +106,13 @@
 
         img {
             border-radius: 0.3rem;
-            box-shadow: 0 0 4rem #333;
+            box-shadow: 0 0 8rem #333;
             transform: scale(2.5);
             transition: all 0.3s ease-in;
+
+            &:hover {
+                animation: none;
+            }
         }
 
         i {
