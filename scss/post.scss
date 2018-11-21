@@ -1,7 +1,10 @@
+$themeColor1: #17355B;
+$themeColor2: white;
+
 .post-header {
     padding: 2rem;
-    background: #17355B;
-    color: white;
+    background: $themeColor1;
+    color: $themeColor2;
     margin-bottom: 2rem;
     box-shadow: 0 0.6rem 1rem #333;
     text-shadow: var(--text-shadow);
@@ -16,24 +19,24 @@
     margin: 4rem 8rem;
     padding: 2rem 5rem;
     padding-bottom: 4rem;
-    border-top: 1px solid #17355B;
-    border-bottom: 1px solid #17355B;
+    border-top: 1px solid $themeColor1;
+    border-bottom: 1px solid $themeColor1;
 
     a {
         position: absolute;
         bottom: 0; right: 0;
         text-decoration: none;
-        color: #17355B;
+        color: $themeColor1;
         font-weight: bold;
         font-size: 1.4rem;
         padding: 0.5rem 2rem;
-        border-top: 1px solid #17355B;
-        border-left: 1px solid #17355B;
+        border-top: 1px solid $themeColor1;
+        border-left: 1px solid $themeColor1;
         transition: background 0.1s ease-in;
 
         &:hover {
-            background: #17355B;
-            color: white;
+            background: $themeColor1;
+            color: $themeColor2;
         }
     }
 }

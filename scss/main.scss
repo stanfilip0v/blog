@@ -1,3 +1,6 @@
+$themeColor1: #17355B;
+$themeColor2: white;
+
 .site-content {
     padding: 1rem 8rem;
     display: flex;
@@ -11,8 +14,8 @@
         text-align: center;
         padding: 1rem;
         margin-bottom: 2rem;
-        border-top: 1px solid #17355B;
-        border-bottom: 1px solid #17355B;
+        border-top: 1px solid $themeColor1;
+        border-bottom: 1px solid $themeColor1;
 
         .preview {
             margin-top: 0.5rem;
@@ -20,7 +23,7 @@
         
         a {
             text-decoration: none;
-            color: #17355B;
+            color: $themeColor1;
             transition: background 0.1s ease-in, color 0.1s ease-in;
 
             &:nth-child(2) {
@@ -28,11 +31,11 @@
                 bottom: 0; right: 0;
                 padding: 0.5rem 1rem;
                 font-weight: bold;
-                border-top: 1px solid #17355B;
-                border-left: 1px solid #17355B;
+                border-top: 1px solid $themeColor1;
+                border-left: 1px solid $themeColor1;
                 &:hover {
-                    background: #17355B;
-                    color: white;
+                    background: $themeColor1;
+                    color: $themeColor2;
                 }
             }
         }
@@ -47,11 +50,11 @@
         height: 13em;
         object-fit: cover;
         border-radius: 50%;
-        box-shadow: 0 0 3rem #17355B;
+        box-shadow: 0 0 3rem $themeColor1;
         transition: box-shadow 0.2s ease-in;
 
         &:hover {
-            box-shadow: 0 0 5rem #17355B;
+            box-shadow: 0 0 5rem $themeColor1;
         }
     }
 }

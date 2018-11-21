@@ -1,3 +1,6 @@
+$themeColor1: #17355B;
+$themeColor2: white;
+
 .site-footer {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +9,7 @@
     background-size: cover;
     padding: 1rem 4rem;
     margin-top: 2rem;
-    color: white;
+    color: $themeColor2;
     text-shadow: var(--text-shadow);
     box-shadow: 0 -0.6rem 1rem #333;
 
@@ -15,11 +18,9 @@
     }
 
     .logo {
-        text-align: center;
-        
         i {
             font-size: 4rem;
-            margin: 0.5rem 0;
+            padding-top: 0.5rem;
         }
     }
 
@@ -59,7 +60,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: $themeColor2;
     }
 
     p, ul {
@@ -80,14 +81,19 @@
         }
 
         .footer-title {
-            border-left: 1px solid white;
-            border-bottom: 1px solid white;
+            border-left: 1px solid $themeColor2;
+            border-bottom: 1px solid $themeColor2;
             padding: 1rem 2rem;
         }
         
         .logo {
             padding-top: 1rem;
-            border-left: 1px solid white;
+            border-left: 1px solid $themeColor2;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            text-align: center;
+            align-items: center;
 
             i {
                 animation: none;
@@ -95,13 +101,44 @@
         }
 
         .links {
-            border-right: 1px solid white;
-            border-bottom: 1px solid white;
+            border-right: 1px solid $themeColor2;
+            border-bottom: 1px solid $themeColor2;
             padding-top: 1rem;
         }
 
         div:nth-child(2) {
             order: 3;
         }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .logo {
+        text-align: center;
+        position: relative;
+        
+        i {
+            font-size: 4rem;
+            padding-top: 0.5rem;
+            position: absolute;
+            top: 65%; left: 50%;
+            transform: translate(-50%, -50%);
+            animation: levitate 2s ease both;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes levitate {
+    0% {
+        top: 65%;
+    }
+
+    50% {
+        top: 75%;
+    }
+
+    100% {
+        top: 65%
     }
 }
