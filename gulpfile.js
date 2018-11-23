@@ -6,7 +6,7 @@ var $ = require('gulp-load-plugins')();
 var path = {
 	SCSS_SRC	: './scss/**/*.scss',
 	SCSS_DST	: './css',
-	CSS_JKDST	: './_site/css',
+	CSS_JKDST	: './docs/css',
 	HTML_SRC	: ['./*.html','./_post/*.*','./_layouts/*.*', './_includes/*.*'],
 }
 
@@ -37,7 +37,7 @@ gulp.task('serve', function() {
 	
 	browserSync.init({
 		server: {
-			baseDir: "./_site/"
+			baseDir: "./docs/"
 		}
 	});
 	
