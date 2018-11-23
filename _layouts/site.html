@@ -16,14 +16,14 @@
         <main class="site-content">
             {% for post in site.posts %}
             <div class="post">
-                <a href="{{ post.url }}">
-                    <img src="/images/{{ post.title }}.jpg">
+                <a href="{{site.baseurl}}{{ post.url }}">
+                    <img src="{{site.baseurl}}/images/{{ post.title }}.jpg">
                     <div class="preview">
                         <h3>{{ post.title }}</h3>
                         {{ post.excerpt }}
                     </div>
                 </a>
-                <a href="{{ post.url }}">Read more</a>
+                <a href="{{site.baseurl}}{{ post.url }}">Read more</a>
             </div>
             {% endfor %}
         </main>
