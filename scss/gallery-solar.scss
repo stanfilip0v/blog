@@ -25,21 +25,25 @@ $themeColor2: white;
         }
     }
 
-    a {
+    .buttons {
         position: absolute;
         bottom: 4%; right: 2%;
-        text-decoration: none;
-        color: $themeColor2;
-        font-size: 1.2em;
         border-bottom: 1px solid $themeColor2;
-        padding: 0.5rem 1rem;
-        transition: background 0.1s ease-in, color 0.1s ease-in;
-        text-shadow: 0 0 8px $themeColor2;
-
-        &:hover {
-            color: #333;
-            background: $themeColor2;
+        padding: 0.35rem 0;
+        a {
+            text-decoration: none;
+            color: $themeColor2;
+            font-size: 1.2em;
+            padding: 0.5rem 1rem;
+            transition: background 0.1s ease-in, color 0.1s ease-in;
+            text-shadow: 0 0 8px $themeColor2;
+    
+            &:hover {
+                color: #333;
+                background: $themeColor2;
+            }
         }
+        
     }
 
     h1 {

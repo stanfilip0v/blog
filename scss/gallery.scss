@@ -9,9 +9,32 @@ $themeColor2: white;
     justify-items: stretch;
     align-items: center;
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .buttons {
+        grid-column: span 3;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid $themeColor1;
+        margin-top: 1rem;
+
+        a {
+            text-decoration: none;
+            color: $themeColor1;
+            font-weight: bold;
+            font-size: 1.4rem;
+            padding: 0.5rem 2rem;
+            transition: background 0.1s ease-in;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+
+            &:hover {
+
+                border-top: 1px solid $themeColor1;
+                border-left: 1px solid $themeColor1;
+                // background: $themeColor1;
+                // color: $themeColor2;
+            }
+        }
+
     }
 
     div:nth-child(1) {
@@ -30,4 +53,28 @@ $themeColor2: white;
         grid-column: span 3;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 2rem #333;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .gallery-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+            margin-bottom: 2rem;
+        }
+
+        a:first-child {
+            display: none;
+        }
+    }
 }
