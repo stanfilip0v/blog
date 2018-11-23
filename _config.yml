@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Mysteries of The Solar System
+title: The Space Portal
 email: slav@mail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Follow the latest news and discoveries, made in the field of space and exploration
+  The place for people, looking to delve in the vast field of space exploration and discovery
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: slav

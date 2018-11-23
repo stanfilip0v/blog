@@ -131,7 +131,7 @@ $themeColor2: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(23, 53, 91, 0.95);
 
         img {
             border-radius: 0.3rem;
@@ -148,6 +148,7 @@ $themeColor2: white;
             position: absolute;
             top: 1%; right: 1%;
             display: block;
+            color: white;
 
             &:hover {
                 cursor: pointer;

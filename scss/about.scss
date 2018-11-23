@@ -1,0 +1,31 @@
+$themeColor1: #17355B;
+$themeColor2: white;
+
+.information {
+    margin: 4rem 8rem;
+    padding: 2rem 5rem;
+    color: $themeColor1;
+    border-top: 1px solid $themeColor1;
+    border-bottom: 1px solid $themeColor1;
+}
+
+@media screen and (min-width: 320px) {
+    .information {
+        margin: 2rem 2rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .information {
+        margin: 2rem 3rem;
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .information {
+        margin: 4rem 8rem;
+        padding: 2rem 5rem;
+    }
+}
