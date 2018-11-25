@@ -1,3 +1,6 @@
+$themeColor1: #17355B;
+$themeColor2: white;
+
 .site-header {
     display: flex;
     background: url(../images/milky-way3.jpg) no-repeat fixed center;
@@ -15,10 +18,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         a {
             text-decoration: none;
             color: var(--header-font-color, white);
-            padding: 0.5rem 1rem;
+            padding: 0 1rem;
             margin: 0;
             text-transform: uppercase;
             transition: color 0.1s ease-in;
@@ -54,9 +58,8 @@
 
     li {
         display: block;
-        padding-top: 0.5rem;
-        border-top: 1px solid transparent;
-        border-left: 1px solid transparent;
+        text-align: center;
+        padding: 0.5rem 0;
         transition: background 0.1s ease-in;
     }
 
@@ -137,7 +140,6 @@
         ul {
             display: flex;
             flex-wrap: wrap;
-            border-bottom: 1px solid white;
         }
     }
 

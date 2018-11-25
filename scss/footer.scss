@@ -120,11 +120,6 @@ $themeColor2: white;
         i {
             font-size: 4rem;
             padding-top: 0.5rem;
-            position: absolute;
-            top: 65%; left: 50%;
-            transform: translate(-50%, -50%);
-            animation: levitate 2s ease both;
-            animation-iteration-count: infinite;
         }
     }
 }
