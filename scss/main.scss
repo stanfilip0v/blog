@@ -71,31 +71,19 @@ $themeColor2: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            a:nth-child(2) {
+                position: static;
+                border-top: none;
+                border-left: none;
+                align-self: flex-end;
+                font-size: 1.3rem;
+            }
         }
 
         img {
             width: 11em;
             height: 11em;
-        }
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .site-content {
-        flex-direction: column;
-        justify-content: center;
-        padding: 1rem 4rem;
-
-        .post {
-            flex: 0 0 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        img {
-            width: 13em;
-            height: 13em;
         }
     }
 }
