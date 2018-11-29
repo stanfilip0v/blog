@@ -4,8 +4,6 @@ $themeColor2: white;
 .site-content {
     padding: 1rem 8rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     
     .post {
         position: relative;
@@ -19,12 +17,19 @@ $themeColor2: white;
 
         .preview {
             margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         a {
             text-decoration: none;
             color: $themeColor1;
             transition: background 0.1s ease-in, color 0.1s ease-in;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             &:nth-child(2) {
                 position: absolute;
@@ -60,7 +65,7 @@ $themeColor2: white;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 320px) {
     .site-content {
         flex-direction: column;
         justify-content: center;
@@ -71,19 +76,76 @@ $themeColor2: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
+            a:nth-child(2) {
+                display: none;
+            }
+        }
 
+        p {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .site-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 6rem;
+
+        .post {
+            flex: 0 0 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
             a:nth-child(2) {
                 position: static;
                 border-top: none;
                 border-left: none;
                 align-self: flex-end;
+                margin-top: 1.5rem;
                 font-size: 1.3rem;
+                display: block;
             }
         }
 
-        img {
-            width: 11em;
-            height: 11em;
+        p {
+            display: block;
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .site-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .post {
+            display: block;
+
+            .preview {
+                margin-bottom: 2rem;
+            }
+
+            a:nth-child(2) {
+                position: absolute;
+                bottom: 0; right: 0;
+                padding: 0.5rem 1rem;
+                font-weight: bold;
+                border-top: 1px solid $themeColor1;
+                border-left: 1px solid $themeColor1;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background: $themeColor1;
+                    color: $themeColor2;
+                }
+            }
+        }
+    }
+}
+
+

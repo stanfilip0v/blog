@@ -17,8 +17,8 @@
             {% for post in site.posts %}
             <div class="post">
                 <a href="{{site.baseurl}}{{ post.url }}">
-                    <img src="{{ site.baseurl }}/images/{{ post.title }}.jpg">
                     <div class="preview">
+                        <img src="{{ site.baseurl }}/images/{{ post.title }}.jpg">
                         <h3>{{ post.title }}</h3>
                         {{ post.excerpt }}
                     </div>
