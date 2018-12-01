@@ -103,11 +103,15 @@ $themeColor2: white;
 
     .site-header {
 
-        padding: 3em 0 0 0;
+        padding: 3em 1em 0 1em;
+
+        .title {
+            margin: 2rem 0;
+        }
 
         ul {
             padding-bottom: 0;
-            border-bottom: none;
+            justify-content: space-evenly;
         }
 
         ul:nth-child(2) {
