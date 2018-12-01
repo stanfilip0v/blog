@@ -7,7 +7,6 @@ $themeColor2: white;
     
     .post {
         position: relative;
-        flex: 0 0 25%;
         height: auto;
         text-align: center;
         padding: 1rem;
@@ -46,7 +45,7 @@ $themeColor2: white;
         }
 
         h3 {
-            padding: 0.5rem 0 0 0;
+            padding: 1rem 0 0.5rem;
             text-transform: capitalize;
         }
     }
@@ -87,7 +86,7 @@ $themeColor2: white;
         padding: 2rem 6rem;
 
         .post {
-            flex: 0 0 50%;
+            flex: 0 0 55%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -104,11 +103,11 @@ $themeColor2: white;
     .site-content {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         .post {
             display: block;
-            flex: 0 0 25%;
+            flex: 0 0 45%;
 
             .preview {
                 margin-bottom: 2rem;
@@ -128,6 +127,17 @@ $themeColor2: white;
                     color: $themeColor2;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .site-content {
+
+        justify-content: space-between;
+        
+        .post {
+            flex: 0 0 30%;
         }
     }
 }
