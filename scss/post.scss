@@ -17,11 +17,24 @@ $themeColor2: white;
 
 .post-main {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 4rem 8rem;
     padding: 2rem 5rem;
     padding-bottom: 4rem;
     border-top: 1px solid $themeColor1;
     border-bottom: 1px solid $themeColor1;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 2rem 0;
+        border-radius: 0.3rem;
+        box-shadow: 0 0 3rem #333;
+    }
 
     a {
         position: absolute;
@@ -51,8 +64,8 @@ $themeColor2: white;
 
 @media screen and (min-width: 800px) {
     .post-main {
-        margin: 2rem 3rem;
-        padding: 2rem 4rem;
+        margin: 2.5rem 4rem;
+        padding: 2.5rem 5rem;
     }
 }
 
