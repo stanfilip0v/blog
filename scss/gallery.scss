@@ -76,6 +76,10 @@ $themeColor2: white;
         grid-column: span 1;
     }
 
+    div:nth-child(13) {
+        grid-column: span 3;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -85,7 +89,7 @@ $themeColor2: white;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .gallery-main {
         display: flex;
         flex-direction: column;
